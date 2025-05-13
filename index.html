@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CollegeLists | Explore Top IT & Management Colleges</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS for animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+
+  <!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
+
+
+  
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+                background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+      background-attachment: fixed;
+      padding-top: 70px;
+    }
+  
+    .hero {
+      background: linear-gradient(-225deg, #030626 0%, #85ACF3 53%, #fff1eb 100%);
+      color: white;
+      padding: 100px 0;
+      margin-top: 0;
+      padding-top: 1rem;
+      background-image: url('/education.png');
+    }
+  
+    .hero-section {
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03);
+    background-color: #6a11cb;
+    background-size: cover;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+  
+    .card-img-top {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 0.25rem;
+    }
+  
+    .card {
+    
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 10px 40px 50px rgba(2, 2, 2, 0);
+    }
+  
+    .card-body {
+      padding: 20px 20px 50px;
+    }
+  
+    .card-title {
+      font-family: 'Montserrat', sans-serif;
+  
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #000001;
+
+    }
+  .card-header {
+  background-color: #09203f;
+  color: #ffffff;
+}
+
+    .card-text {
+      font-family: 'Montserrat', sans-serif;
+  
+      font-size: 1rem;
+      color: #555;
+    }
+  
+    .card .btn {
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+  
+    .card .btn:hover {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+      color: white;
+    }
+  
+    footer {
+      background-color: #f8f9fa;
+    }
+  
+    footer .btn-group .btn {
+      border-radius: 0.25rem;
+    }
+  
+    .navbar {
+      background-color: transparent;
+    }
+  
+    .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.5px;
+    }
+  
+    .navbar-brand {
+      color: #09203f;
+      transition: color 0.3s ease;
+  
+    }
+  
+ .navbar-brand:hover {
+    color: #084298;
+    text-decoration: none;
+      text-shadow: 0 0 1px #084298, 0 0 1px #084298;
+
+  }
+  
+  
+    .navbar-nav .nav-link {
+      color: #000000;
+    }
+  
+    .navbar-nav .nav-link.active {
+      font-weight: bold;
+      color: #070707;
+    }
+  
+    .navbar-nav .nav-link:hover {
+      text-decoration: underline;
+    }
+  
+    #profileHistory,
+    #profileInfo {
+      margin-left: auto;
+  
+    }
+
+    
+  </style>
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <header>
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background-color: #dfe9f3; z-index: 1030;">
+      <div class="container">
+        <div>
+
+          <a class="navbar-brand" href="/index.html">CollegLists</a></div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav justify-content-center w-100">
+            <div id="profileHistory"><a class="nav-link mx-3" href="/History.html"><span>History</span></a></div>
+            <a class="nav-link mx-3" href="/SearchPage.html"><span>&#128269;</span> Search</a>
+            <a class="nav-link active mx-3" href="/index.html">Colleges</a>
+            <a class="nav-link mx-3" href="/CollegesAccordingToStates.html">States</a>
+            <a class="nav-link mx-3" href="/About.html">About</a>
+          </div>
+          <div id="profileInfo"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container text-center text-white py-5">
+      
+      <h1 class="display-4 fw-bold"">Discover Top IT & Management Colleges in India</h1>
+      <p class="lead">Search, explore, and compare institutions offering your desired course.</p>
+      <a href="/SearchPage.html" class="btn btn-light btn-lg mt-3">Start Searching</a>
+      
+    </div>
+    
+  
+    
+  </section>
+
+
+  <!-- Main Content -->
+<main class="flex-grow-1 py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">🎓 Featured Colleges</h2>
+    
+    <div class="row justify-content-center g-4" id="cardsInside">
+
+      <div class="col-md-10" data-aos="fade-up">
+
+        <div class="card flex-row h-100 shadow-sm rounded border-0 overflow-hidden">
+          <div class="card-img-left" style="width: 40%; min-width: 180px;">
+            <img src="college.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="College Image">
+          </div>
+          <div class="card-body d-flex flex-column justify-content-center p-4" id="cardBody">
+            <h5 class="card-title mb-2">JAYVANTRAI HARRPRASAD COLLEGE</h5>
+            <p class="card-text mb-2 text-muted">📍 Gujarat, Surat - 394315</p>
+            <p class="card-text mb-3">Offering courses in IT, Commerce, and Management. Known for its strong faculty and
+              placement programs.</p>
+            <a href="#" class="btn btn-outline-primary mt-auto align-self-start">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+  <!-- Footer with Pagination -->
+  <footer class="bg-light py-3 mt-auto">
+    <div class="container d-flex justify-content-center">
+      <div class="btn-group" role="group" aria-label="Pagination">
+        <button type="button" class="btn btn-outline-primary" onclick="firstBtn()">First</button>
+        <button type="button" class="btn btn-outline-secondary" onclick="prevBtn()" id="prevBtn">Previous</button>
+        <button type="button" class="btn btn-outline-success" onclick="nextBtn()">Next</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
